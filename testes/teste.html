@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="teste.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulário</h1>
+
+        <div class="section">
+            <strong>Dados pessoais</strong>
+            <label>Nome:
+                <input type="text" name="nome">
+            </label>
+            <label>Endereço:
+                <input type="text" name="endereco">
+            </label>
+            <label>Cidade:
+                <select name="cidade">
+                    <option>São Paulo</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Belo Horizonte</option>
+                </select>
+            </label>
+        </div>
+
+        <div class="section">
+            <strong>Dados profissionais</strong>
+            <div>
+                Natureza do Cargo:
+                <div class="radio-group">
+                    <label><input type="radio" name="cargo" value="gerencia"> Gerência</label>
+                    <label><input type="radio" name="cargo" value="financeiro"> Financeiro</label>
+                    <label><input type="radio" name="cargo" value="recepcao"> Recepção</label>
+                    <label><input type="radio" name="cargo" value="juridico"> Jurídico</label>
+                </div>
+            </div>
+
+            <div>
+                Área de interesse:
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="interesse" value="computacao"> Computação</label>
+                    <label><input type="checkbox" name="interesse" value="biologia"> Biologia</label>
+                    <label><input type="checkbox" name="interesse" value="meioambiente"> Meio Ambiente</label>
+                    <label><input type="checkbox" name="interesse" value="engenharia"> Engenharia</label>
+                </div>
+            </div>
+
+            <div class="mini-curriculo">
+                <label for="curriculo">Mini-currículo:</label>
+                <textarea name="curriculo" id="curriculo" rows="4"></textarea>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

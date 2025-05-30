@@ -4,47 +4,78 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário</title>
+    <link rel="stylesheet" href="desafio.css">
 </head>
 
 <body>
-    <h2>Formulário</h2>
+    <div class="container">
+        <h1>Formulário</h1>
 
-    <form>
-        <fieldset>
-            <legend><strong>Dados pessoais</strong></legend>
-            Nome: <input type="text" name="nome"><br><br> Endereço: <input type="text" name="endereco"><br><br> Cidade: <input type="text" name="cidade"><br><br> Estado:
-            <select name="estado">
-                <option>São Paulo</option>
-                <option>Rio de Janeiro</option>
-                <option>Minas Gerais</option>
-                <option>Bahia</option>
-                <option>Paraná</option>
-            </select>
-        </fieldset>
-        <br>
-        <fieldset>
-            <legend><strong>Dados profissionais</strong></legend>
-            Natureza do Cargo<br>
-            <input type="radio" name="cargo" value="gerencia"> Gerência
-            <input type="radio" name="cargo" value="financeiro"> Financeiro
-            <input type="radio" name="cargo" value="recepcao"> Recepção
-            <input type="radio" name="cargo" value="administrativo"> Administrativo
-            <input type="radio" name="cargo" value="juridico"> Jurídico
+        <form>
+            <fieldset class="container1">
+                <h3>Dados pessoais</h3>
 
-            <br><br> Área de interesse<br>
-            <input type="checkbox" name="area" value="computacao"> Computação
-            <input type="checkbox" name="area" value="biologia"> Biologia
-            <input type="checkbox" name="area" value="meioambiente"> Meio Ambiente
-            <input type="checkbox" name="area" value="engenharia"> Engenharia
-            <input type="checkbox" name="area" value="historia"> História
+                <label for="Nome"></label>Nome:
+                <input type="text" id="nome"><br>
 
-            <br><br> Mini-currículo:
-            <textarea name="curriculo" rows="5" cols="60"></textarea>
-        </fieldset>
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </form>
+                <label for="Endereço"></label>Endereço:
+                <input type="text" id="endereco"><br>
+
+                <label for="Cidade"></label>Cidade:
+                <select name="Cidade">
+                    <option>São Paulo</option>
+                    <option>Guarulhos</option>
+                    <option>Rio de Janeiro</option>
+                    <option>Bahia</option>
+                    <option>Paraná</option>
+                    
+                </select>
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <h3>Dados Profissionais</h3>
+
+                <h4>Natureza do Cargo</h4>
+                <input type="radio" id="cargo-gerencia" name="cargo" value="gerencia">
+                <label for="cargo-gerencia">Gerência</label>
+
+                <input type="radio" id="cargo-financeiro" name="cargo" value="financeiro">
+                <label for="cargo-financeiro">Financeiro</label>
+
+                <input type="radio" id="cargo-recepcao" name="cargo" value="recepcao">
+                <label for="cargo-recepcao">Recepção</label>
+
+                <input type="radio" id="cargo-juridico" name="cargo" value="juridico">
+                <label for="cargo-juridico">Jurídico</label>
+
+                <h3>Área de interesse</h3>
+                <input type="checkbox" id="area-computacao" name="area" value="computacao">
+                <label for="area-computacao">Computação</label>
+
+                <input type="checkbox" id="area-biologia" name="area" value="biologia">
+                <label for="area-biologia">Biologia</label>
+
+                <input type="checkbox" id="area-meioambiente" name="area" value="meioambiente">
+                <label for="area-meioambiente">Meio Ambiente</label>
+                <br>
+                <input type="checkbox" id="area-engenharia" name="area" value="engenharia">
+                <label for="area-engenharia">Engenharia</label>
+
+
+                <br> Mini currículo:
+
+                <textarea name="curriculo" rows="5" cols="40"></textarea>
+
+            </fieldset>
+            <br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
 </body>
 
 </html>
